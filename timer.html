@@ -4,12 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>60:00</title>
+    <title>The Sailors Timer App</title>
 </head>
 <body>
     <div id = "container">
+        <div id = "setTime">
+            <form action="#">
+                <input type = "text" id = "hours" placeholder="h" value="0">
+                <input type = "text" id = "minutes" placeholder = "min" value="00">
+                <input type = "text" id = "seconds" placeholder="sec" value="00"><br>
+                <input type = "button" id = "setValues" value="set the time" onclick="setTime()">
+            </form>
+        </div>
         <h1>Time left</h1>
-        <div id="clock">60:00</div>
+        <div id="clock">1:00:00</div>
         <input type="button" id="start" value="start" onclick="startTimer()">
     </div>
 
